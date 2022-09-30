@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-xs-6">
+        <button class="btn btn-primary">New Accomodation</button>
+    </div>
+    <div class="col-xs-6"
+    *ngFor="let accomodationItem of accomodationItems">
+        <h1>Accomodation Name</h1>
+        <ul class="list-group">
+            <li class="list-group-item">City: {{ accomodationItem.city }}</li>
+            <li class="list-group-item">Street: {{ accomodationItem.street }} </li>
+            <li class="list-group-item">TimeFrom: {{ accomodationItem.timeFrom }} </li>
+            <li class="list-group-item">TimeTo: {{ accomodationItem.timeTo }}</li>
+            <li class="list-group-item">Price: {{ accomodationItem.price }} </li>
+          </ul>
+    </div>
+</div>

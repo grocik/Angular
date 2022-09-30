@@ -1,0 +1,15 @@
+<app-header (whereToNavigate)="changePage($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-travel 
+      *ngIf="value === 2">
+    </app-travel>
+    </div>
+    <div class="col-md-12">
+       <app-accomodation
+        *ngIf="value === 1">
+      </app-accomodation>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+<div class="row">
+    <hr>
+    <form>
+        <div class="row">
+            <div class="col-sm-2 form-group">
+                <label for="city">City A</label>
+                <input 
+                type="text" 
+                id="city" 
+                class="form-control"
+                #cityInput>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="street">Street A</label>
+                <input 
+                type="text" 
+                id="street" 
+                class="form-control"
+                #streetInput>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="Departure">Departure</label>
+                <input 
+                type="text" 
+                id="departure" 
+                class="form-control"
+                #departureInput>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="arrival">Arrival</label>
+                <input 
+                type="text" 
+                id="arrival" 
+                class="form-control"
+                #arrivalInput>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="toTheCity">City B</label>
+                <input type="text"
+                id="toTheCity"
+                class="form-control"
+                #toTheCityInput>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="toTheStreet">street A</label>
+                <input type="text"
+                id="toTheStreet"
+                class="form-control"
+                #toTheStreetInput>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="price">Price</label>
+                <input type="text"
+                id="price"
+                class="form-control"
+                #priceInput>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="objective">Objective</label>
+                <input 
+                type="text" 
+                id="obejective" 
+                class="form-control"
+                #objectiveInput>
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="type">Type</label>
+                <input 
+                type="text" 
+                id="type" 
+                class="form-control"
+                #typeInput>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <button class="btn btn-primary" (click)="onAddRoute()">New Route</button>
+            </div>
+        </div>
+    </form>
+    <app-travel-routes
+    *ngFor="let list of route.routes"
+    [list]="list">
+    </app-travel-routes>
+</div>

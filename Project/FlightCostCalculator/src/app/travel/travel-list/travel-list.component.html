@@ -1,0 +1,10 @@
+<div class="row">
+    <hr>
+    <div class="col-xs-12">
+        <app-travel-item
+        *ngFor="let travel of travels"
+        [travelItem]="travel">
+    </app-travel-item>
+        <app-travel-edit></app-travel-edit>
+    </div>
+</div>
